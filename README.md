@@ -1,4 +1,4 @@
-# MrKrishna Child Panel – Minecraft Webstore.
+# MrKrishna Child Panel – Minecraft Webstore
 
 Node.js + Express + SQLite. One Child Panel = one storefront = **exactly one** Minecraft server.
 No `.env` files: first run is configured from a setup wizard and the admin dashboard.
@@ -12,7 +12,7 @@ No `.env` files: first run is configured from a setup wizard and the admin dashb
 npm install          # express + better-sqlite3
 npm start            # http://localhost:3000   (PORT env var is honoured on Render/Heroku-style hosts)
 ```
-Requires Node 18.18+. Optional: `node server.js --data /var/data --port 8080`.
+Requires Node 22 (pinned in `package.json` + `.node-version`; Render must NOT use a newer Node such as 26, where `better-sqlite3` cannot compile). If the native module is unavailable the panel automatically uses Node's built-in `node:sqlite`. Optional: `node server.js --data /var/data --port 8080`.
 
 The first start creates `data/` (mode 0700) containing:
 
