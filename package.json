@@ -1,0 +1,16 @@
+{
+  "name": "mrkrishna-child-panel",
+  "version": "1.0.0",
+  "description": "MrKrishna Child Panel - Minecraft webstore (Node.js + Express + SQLite)",
+  "private": true,
+  "main": "server.js",
+  "engines": { "node": ">=18.18" },
+  "scripts": {
+    "start": "node server.js",
+    "test": "node test/run.js"
+  },
+  "dependencies": {
+    "better-sqlite3": "^11.7.0",
+    "express": "^4.21.2"
+  }
+}

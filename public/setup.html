@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Set up your panel</title>
+<meta name="theme-color" content="#0a0a0c">
+<link rel="icon" href="/img/favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;500;600;700&family=Manrope:wght@400;500;700&family=Russo+One&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/css/ref.css">
+<link rel="stylesheet" href="/css/app.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<div id="app-header"></div>
+<main id="main"><div class="wrap narrow" style="padding-top:clamp(28px,5vw,64px)">
+  <div class="stack">
+    <div><p class="kicker">First-time setup</p><h1 style="font-size:clamp(2rem,5vw,3rem)">Connect your Child Panel</h1><p class="lead" style="margin-top:8px">Link this store to your MrKrishna Main Panel. No config files needed.</p></div>
+    <div id="setupMsg"></div>
+    <form class="panel" id="setupForm" autocomplete="off">
+      <div class="field"><label for="mainUrl">Main Panel URL</label><input id="mainUrl" required><small>Where you generated your one-time setup code.</small></div>
+      <div class="field"><label for="code">One-time setup code</label><input id="code" required autocomplete="off" spellcheck="false"><small>Log in to the Main Panel and generate a Child Panel setup code.</small></div>
+      <div class="field"><label for="publicUrl">This panel's public URL</label><input id="publicUrl" required><small>Used for Discord login redirects. Must be the https address customers open.</small></div>
+      <div class="field"><label for="pw">Admin password</label><input id="pw" type="password" minlength="10" required autocomplete="new-password"><small>At least 10 characters. Your admin email is the owner email returned by the Main Panel.</small></div>
+      <div class="field"><label for="pw2">Repeat password</label><input id="pw2" type="password" minlength="10" required autocomplete="new-password"></div>
+      <button class="btn" id="setupBtn" type="submit">Finish setup</button>
+    </form>
+  </div>
+</div></main>
+<div id="app-footer"></div>
+<div class="toast" id="toast" role="status"></div>
+<script src="/js/common.js"></script>
+<script src="/js/setup.js"></script>
+</body>
+</html>

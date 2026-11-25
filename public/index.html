@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Store</title>
+<meta name="theme-color" content="#0a0a0c">
+<link rel="icon" href="/img/favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;500;600;700&family=Manrope:wght@400;500;700&family=Russo+One&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/css/ref.css">
+<link rel="stylesheet" href="/css/app.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<div id="app-header"></div>
+<main id="main">
+  <section class="store-hero">
+    <p class="kicker">Server store</p>
+    <h1 id="storeTitle">&nbsp;</h1>
+    <p class="lead" id="storeSubtitle"></p>
+    <div class="hero-actions" id="heroActions"></div>
+    <div id="notices" class="stack" style="margin-top:18px"></div>
+    <div class="page-tabs" id="pageTabs" aria-label="Categories"></div>
+  </section>
+  <section id="storeBody" class="wrap" style="padding-top:12px">
+    <div class="section-head"><div class="head-text"><h2 id="boardTitle">Store</h2><p id="boardText"></p></div></div>
+    <div class="card-grid" id="cardGrid"></div>
+  </section>
+</main>
+<div id="app-footer"></div>
+<div class="toast" id="toast" role="status"></div>
+<script src="/js/common.js"></script>
+<script src="/js/store.js"></script>
+</body>
+</html>

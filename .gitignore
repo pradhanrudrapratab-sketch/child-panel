@@ -1,0 +1,17 @@
+# --- runtime data: NEVER commit ---
+data/
+*.db
+*.db-wal
+*.db-shm
+*.sqlite
+*.key
+secret.key
+contract.json
+backups/
+*.log
+logs/
+# --- misc ---
+node_modules/
+.DS_Store
+.env
+.env.*
