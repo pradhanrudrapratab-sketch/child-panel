@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sign in</title>
+<meta name="theme-color" content="#0a0a0c">
+<link rel="icon" href="/img/favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;500;600;700&family=Manrope:wght@400;500;700&family=Russo+One&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/css/ref.css">
+<link rel="stylesheet" href="/css/app.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<div id="app-header"></div>
+<main id="main"><div class="wrap narrow" style="padding-top:clamp(28px,6vw,72px)">
+  <div class="stack">
+    <div><p class="kicker">Welcome</p><h1 style="font-size:clamp(2rem,5vw,3rem)">Sign in</h1><p class="lead" style="margin-top:8px">Log in to buy ranks, top up your wallet and track deliveries.</p></div>
+    <div id="loginError"></div>
+    <div class="panel stack" id="optDiscord"><h2>Discord</h2><p class="sub">Your Discord account keeps your wallet and orders safe.</p><div id="discordSlot"></div></div>
+    <div class="panel stack" id="optMc"><h2>Minecraft account</h2><p class="sub">Prove you own your in-game account with a one-time command. No password needed.</p><div id="mcSlot"></div></div>
+    <p class="small muted">Store owner? <a href="/admin" style="text-decoration:underline">Admin login</a></p>
+  </div>
+</div></main>
+<div id="app-footer"></div>
+<div class="toast" id="toast" role="status"></div>
+<script src="/js/common.js"></script>
+<script src="/js/login.js"></script>
+</body>
+</html>
