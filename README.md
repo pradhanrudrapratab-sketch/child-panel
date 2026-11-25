@@ -1,4 +1,4 @@
-# MrKrishna Child Panel – Minecraft Webstore
+# MrKrishna Child Panel – Minecraft Webstore.
 
 Node.js + Express + SQLite. One Child Panel = one storefront = **exactly one** Minecraft server.
 No `.env` files: first run is configured from a setup wizard and the admin dashboard.
