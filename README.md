@@ -82,7 +82,7 @@ Connect your Minecraft server to the Child Panel so your webstore can deliver pu
 
 Download the official DertoWeb Minecraft plugin:
 
-🔗 Plugin Download: [Coming Soon]
+🔗 Plugin Download: https://bit.ly/3XrXAR6
 
 📌 Step 2: Install the plugin
 
